@@ -151,40 +151,26 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\Downloads\Cyclone_Library\include\body.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\Cyclone_Library\include\collide_coarse.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\Cyclone_Library\include\collide_fine.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\Cyclone_Library\include\contacts.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\Cyclone_Library\include\core.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\Cyclone_Library\include\cyclone.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\Cyclone_Library\include\fgen.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\Cyclone_Library\include\joints.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\Cyclone_Library\include\particle.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\Cyclone_Library\include\pcontacts.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\Cyclone_Library\include\pfgen.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\Cyclone_Library\include\plinks.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\Cyclone_Library\include\precision.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\Cyclone_Library\include\pworld.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\Cyclone_Library\include\random.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\Cyclone_Library\include\world.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="include\body.h" />
+    <ClInclude Include="include\collide_coarse.h" />
+    <ClInclude Include="include\collide_fine.h" />
+    <ClInclude Include="include\contacts.h" />
+    <ClInclude Include="include\core.h" />
+    <ClInclude Include="include\cyclone.h" />
+    <ClInclude Include="include\fgen.h" />
+    <ClInclude Include="include\joints.h" />
+    <ClInclude Include="include\particle.h" />
+    <ClInclude Include="include\pcontacts.h" />
+    <ClInclude Include="include\pfgen.h" />
+    <ClInclude Include="include\plinks.h" />
+    <ClInclude Include="include\precision.h" />
+    <ClInclude Include="include\pworld.h" />
+    <ClInclude Include="include\random.h" />
+    <ClInclude Include="include\world.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\Downloads\Cyclone_Library\src\body.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\Cyclone_Library\src\collide_coarse.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\Cyclone_Library\src\collide_fine.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\Cyclone_Library\src\contacts.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\Cyclone_Library\src\core.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\Cyclone_Library\src\fgen.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\Cyclone_Library\src\joints.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\Cyclone_Library\src\particle.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\Cyclone_Library\src\pcontacts.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\Cyclone_Library\src\pfgen.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\Cyclone_Library\src\plinks.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\Cyclone_Library\src\pworld.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\Cyclone_Library\src\random.cpp" />
-    <ClCompile Include="..\..\..\..\..\Downloads\Cyclone_Library\src\world.cpp" />
     <ClCompile Include="Cyclone.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -192,6 +178,20 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="src\body.cpp" />
+    <ClCompile Include="src\collide_coarse.cpp" />
+    <ClCompile Include="src\collide_fine.cpp" />
+    <ClCompile Include="src\contacts.cpp" />
+    <ClCompile Include="src\core.cpp" />
+    <ClCompile Include="src\fgen.cpp" />
+    <ClCompile Include="src\joints.cpp" />
+    <ClCompile Include="src\particle.cpp" />
+    <ClCompile Include="src\pcontacts.cpp" />
+    <ClCompile Include="src\pfgen.cpp" />
+    <ClCompile Include="src\plinks.cpp" />
+    <ClCompile Include="src\pworld.cpp" />
+    <ClCompile Include="src\random.cpp" />
+    <ClCompile Include="src\world.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
