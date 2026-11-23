@@ -5,14 +5,20 @@
     <Platform Name="x64" />
   </Configurations>
   <Project Path="raylib.vcxproj" Id="8898EA18-743A-15EF-5DF5-284349369C3F">
+    <Build Solution="Debug|ARM64" Project="false" />
+    <Build Solution="Debug|Win32" Project="false" />
   </Project>
   <Project Path="Cyclone/Cyclone.vcxproj" Id="cd01e20e-2ddb-496f-b198-99032c5381e8">
     <Platform Solution="*|ARM64" Project="x64" />
+    <Build Solution="Debug|Win32" Project="false" />
   </Project>
   <Project Path="GoogleTest/GoogleTest.vcxproj" Id="971ccdb2-a9c1-4214-9bc6-185c66ecccec">
     <Platform Solution="*|ARM64" Project="x64" />
+    <Build Solution="Debug|Win32" Project="false" />
   </Project>
   <Project Path="raylib-quickstart-main.vcxproj" Id="7223710C-5E1D-9A5E-478A-306F332300CB" DefaultStartup="true">
     <BuildDependency Project="raylib.vcxproj" />
+    <Build Solution="Debug|ARM64" Project="false" />
+    <Build Solution="Debug|Win32" Project="false" />
   </Project>
 </Solution>
