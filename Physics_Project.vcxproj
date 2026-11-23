@@ -27,11 +27,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7223710C-5E1D-9A5E-478A-306F332300CB}</ProjectGuid>
+    <ProjectGuid>{FE217296-6AAD-DF5A-73BE-624FDFC83B5B}</ProjectGuid>
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>raylib-quickstart-main</RootNamespace>
-    <ProjectName>Game</ProjectName>
+    <RootNamespace>Physics_Project</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -100,43 +99,43 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(ProjectDir)bin\Debug\</OutDir>
-    <IntDir>$(ProjectDir)obj\x64\Debug\raylib-quickstart-main\</IntDir>
-    <TargetName>raylib-quickstart-main</TargetName>
+    <IntDir>$(ProjectDir)obj\x64\Debug\Physics_Project\</IntDir>
+    <TargetName>Physics_Project</TargetName>
     <TargetExt>.exe</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(ProjectDir)bin\Debug\</OutDir>
-    <IntDir>$(ProjectDir)obj\x86\Debug\raylib-quickstart-main\</IntDir>
-    <TargetName>raylib-quickstart-main</TargetName>
+    <IntDir>$(ProjectDir)obj\x86\Debug\Physics_Project\</IntDir>
+    <TargetName>Physics_Project</TargetName>
     <TargetExt>.exe</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(ProjectDir)bin\Debug\</OutDir>
-    <IntDir>$(ProjectDir)obj\ARM64\Debug\raylib-quickstart-main\</IntDir>
-    <TargetName>raylib-quickstart-main</TargetName>
+    <IntDir>$(ProjectDir)obj\ARM64\Debug\Physics_Project\</IntDir>
+    <TargetName>Physics_Project</TargetName>
     <TargetExt>.exe</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(ProjectDir)bin\Release\</OutDir>
-    <IntDir>$(ProjectDir)obj\x64\Release\raylib-quickstart-main\</IntDir>
-    <TargetName>raylib-quickstart-main</TargetName>
+    <IntDir>$(ProjectDir)obj\x64\Release\Physics_Project\</IntDir>
+    <TargetName>Physics_Project</TargetName>
     <TargetExt>.exe</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(ProjectDir)bin\Release\</OutDir>
-    <IntDir>$(ProjectDir)obj\x86\Release\raylib-quickstart-main\</IntDir>
-    <TargetName>raylib-quickstart-main</TargetName>
+    <IntDir>$(ProjectDir)obj\x86\Release\Physics_Project\</IntDir>
+    <TargetName>Physics_Project</TargetName>
     <TargetExt>.exe</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(ProjectDir)bin\Release\</OutDir>
-    <IntDir>$(ProjectDir)obj\ARM64\Release\raylib-quickstart-main\</IntDir>
-    <TargetName>raylib-quickstart-main</TargetName>
+    <IntDir>$(ProjectDir)obj\ARM64\Release\Physics_Project\</IntDir>
+    <TargetName>Physics_Project</TargetName>
     <TargetExt>.exe</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -144,7 +143,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>DEBUG;PLATFORM_DESKTOP;GRAPHICS_API_OPENGL_33;_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>src;include;build\external\raylib-master\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;include;build\external\raylib-master\src;Cyclone\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
@@ -216,7 +215,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>NDEBUG;PLATFORM_DESKTOP;GRAPHICS_API_OPENGL_33;_WINSOCK_DEPRECATED_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>src;include;build\external\raylib-master\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;include;build\external\raylib-master\src;Cyclone\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -317,11 +316,8 @@
     <Image Include="resources\wabbit_alpha.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Cyclone\Cyclone.vcxproj">
-      <Project>{cd01e20e-2ddb-496f-b198-99032c5381e8}</Project>
-    </ProjectReference>
-    <ProjectReference Include="raylib.vcxproj">
-      <Project>{8898EA18-743A-15EF-5DF5-284349369C3F}</Project>
+    <ProjectReference Include="..\Game\Game.vcxproj">
+      <Project>{85477f54-fffb-4fea-83cc-0449379e4d0b}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -10,9 +10,11 @@ by Jeffery Myers is marked with CC0 1.0. To view a copy of this license, visit h
 #include "raylib.h"
 
 #include "resource_dir.h"	// utility header for SearchAndSetResourceDir
+#include <particle.h>
 
 int main ()
 {
+	cyclone::Particle dummy;
 	// Tell the window to use vsync and work on high DPI displays
 	SetConfigFlags(FLAG_VSYNC_HINT | FLAG_WINDOW_HIGHDPI);
 

@@ -4,21 +4,17 @@
     <Platform Name="Win32" />
     <Platform Name="x64" />
   </Configurations>
-  <Project Path="raylib.vcxproj" Id="8898EA18-743A-15EF-5DF5-284349369C3F">
-    <Build Solution="Debug|ARM64" Project="false" />
-    <Build Solution="Debug|Win32" Project="false" />
+  <Project Path="../Game/Game.vcxproj" Id="85477f54-fffb-4fea-83cc-0449379e4d0b">
+    <Platform Solution="*|ARM64" Project="x64" />
   </Project>
   <Project Path="Cyclone/Cyclone.vcxproj" Id="cd01e20e-2ddb-496f-b198-99032c5381e8">
     <Platform Solution="*|ARM64" Project="x64" />
-    <Build Solution="Debug|Win32" Project="false" />
   </Project>
   <Project Path="GoogleTest/GoogleTest.vcxproj" Id="971ccdb2-a9c1-4214-9bc6-185c66ecccec">
     <Platform Solution="*|ARM64" Project="x64" />
-    <Build Solution="Debug|Win32" Project="false" />
   </Project>
-  <Project Path="raylib-quickstart-main.vcxproj" Id="7223710C-5E1D-9A5E-478A-306F332300CB" DefaultStartup="true">
+  <Project Path="Physics_Project.vcxproj" Id="fe217296-6aad-df5a-73be-624fdfc83b5b">
     <BuildDependency Project="raylib.vcxproj" />
-    <Build Solution="Debug|ARM64" Project="false" />
-    <Build Solution="Debug|Win32" Project="false" />
   </Project>
+  <Project Path="raylib.vcxproj" Id="8898ea18-743a-15ef-5df5-284349369c3f" />
 </Solution>
